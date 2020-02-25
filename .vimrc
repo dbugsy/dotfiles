@@ -46,6 +46,19 @@ nnoremap <Tab> :tabn<CR>
 noremap Y "+y
 
 " Vim Plugin Settings start here
+"
+" vim ale for async linting
+" set specific linters
+let g:ale_linters = {
+      \  'ruby': ['rubocop']
+      \}
+
+" only run linters that are specified above (save cpu)
+let g:ale_linters_explicit = 1
+
+" vim-airline
+" enable ale integration
+let g:airline#extensions#ale#enabled = 1 
 
 " vim-auto-save
 let g:auto_save = 1
