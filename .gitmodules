@@ -22,3 +22,6 @@
 [submodule ".vim/pack/dbugsy/start/supertab"]
 	path = .vim/pack/dbugsy/start/supertab
 	url = https://github.com/ervandew/supertab
+[submodule ".vim/pack/dbugsy/start/nertree"]
+	path = .vim/pack/dbugsy/start/nertree
+	url = https://github.com/preservim/nerdtree
