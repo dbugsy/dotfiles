@@ -19,3 +19,6 @@
 [submodule ".vim/pack/dbugsy/start/vim-ruby"]
 	path = .vim/pack/dbugsy/start/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby
+[submodule ".vim/pack/dbugsy/start/supertab"]
+	path = .vim/pack/dbugsy/start/supertab
+	url = https://github.com/ervandew/supertab
