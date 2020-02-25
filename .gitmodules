@@ -25,3 +25,6 @@
 [submodule ".vim/pack/dbugsy/start/nertree"]
 	path = .vim/pack/dbugsy/start/nertree
 	url = https://github.com/preservim/nerdtree
+[submodule ".vim/pack/dbugsy/start/ack.vim"]
+	path = .vim/pack/dbugsy/start/ack.vim
+	url = https://github.com/mileszs/ack.vim
