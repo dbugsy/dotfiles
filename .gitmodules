@@ -10,3 +10,6 @@
 [submodule ".vim/pack/dbugsy/start/ctrlp"]
 	path = .vim/pack/dbugsy/start/ctrlp
 	url = https://github.com/kien/ctrlp.vim
+[submodule ".vim/pack/dbugsy/start/vim-airline"]
+	path = .vim/pack/dbugsy/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
