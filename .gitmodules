@@ -4,3 +4,6 @@
 [submodule ".vim/pack/dbugsy/start/vim-surround"]
 	path = .vim/pack/dbugsy/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule ".vim/pack/dbugsy/start/vim-auto-save"]
+	path = .vim/pack/dbugsy/start/vim-auto-save
+	url = https://github.com/907th/vim-auto-save

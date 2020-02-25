@@ -50,9 +50,6 @@ noremap Y "+y
 
 " Vim Plugin Settings start here
 
-" Plugin 'tpope/vim-haml'
-" Plugin 'tpope/vim-endwise'
-" Plugin 'vim-scripts/vim-auto-save'
 " Plugin 'morhetz/gruvbox'
 " Plugin 'Raimondi/delimitMate'
 " Plugin 'godlygeek/tabular'
