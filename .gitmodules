@@ -31,3 +31,6 @@
 [submodule ".vim/pack/dbugsy/start/vim-multiple-cursors"]
 	path = .vim/pack/dbugsy/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
+[submodule ".vim/pack/dbugsy/start/ale"]
+	path = .vim/pack/dbugsy/start/ale
+	url = https://github.com/dense-analysis/ale
