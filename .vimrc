@@ -42,24 +42,13 @@ inoremap jj <Esc>
 " remap tabs
 nnoremap <Tab> :tabn<CR>
 
-" vim-auto-save
-let g:auto_save = 1
-
 " proper copying
 noremap Y "+y
 
 " Vim Plugin Settings start here
 
-" Plugin 'morhetz/gruvbox'
-" Plugin 'Raimondi/delimitMate'
-" Plugin 'godlygeek/tabular'
-" Plugin 'plasticboy/vim-markdown'
-" Plugin 'mattn/emmet-vim'
-" Plugin 'terryma/vim-multiple-cursors'
-" Bundle 'vim-ruby/vim-ruby'
-" Bundle 'roman/golden-ratio'
-" Plugin 'mileszs/ack.vim'
-" Plugin 'ervandew/supertab'
+" vim-auto-save
+let g:auto_save = 1
 
 "Ag
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -76,12 +65,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_root_markers = ['Gemfile']
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
-" lisp formatting
-autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
-
-" tslime
-let g:tslime_ensure_trailing_newlines = 1
-
 " vim-test
 nmap <silent> <leader>s :TestNearest<CR>
 nmap <silent> <leader>t :TestFile<CR>
@@ -90,9 +73,6 @@ nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 let test#python#nosetests#options = '--rednose'
 let test#python#runner = 'nose'
-
-" markdown
-au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 " Open NERDTree with [<leader>d]
 map <Leader>d :NERDTreeToggle<CR>
