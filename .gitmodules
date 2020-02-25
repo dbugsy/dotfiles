@@ -13,3 +13,6 @@
 [submodule ".vim/pack/dbugsy/start/vim-airline"]
 	path = .vim/pack/dbugsy/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/pack/dbugsy/start/golden-ratio"]
+	path = .vim/pack/dbugsy/start/golden-ratio
+	url = https://github.com/roman/golden-ratio
