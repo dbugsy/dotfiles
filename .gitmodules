@@ -1,0 +1,3 @@
+[submodule ".vim/pack/dbugsy/start/vim-test"]
+	path = .vim/pack/dbugsy/start/vim-test
+	url = https://github.com/janko/vim-test
