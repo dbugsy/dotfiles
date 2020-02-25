@@ -30,12 +30,6 @@ set timeout timeoutlen=1000 ttimeoutlen=100
 " enter reruns last command
 nnoremap <CR> :wa<CR>:!!<CR>
 
-" mapping for line moving
-inoremap <c-j> <Esc>:m .+1<CR>==gi
-inoremap <c-k> <Esc>:m .-2<CR>==gi
-vnoremap <c-j> :m '>+1<CR>gv=gv
-vnoremap <c-k> :m '<-2<CR>gv=gv
-
 " faster screen redraw
 set ttyfast
 
@@ -56,10 +50,6 @@ noremap Y "+y
 
 " Vim Plugin Settings start here
 
-" Plugin 'pangloss/vim-javascript'
-" Plugin 'VundleVim/Vundle.vim'
-" Plugin 'janko-m/vim-test'
-" Plugin 'tpope/vim-surround'
 " Plugin 'tpope/vim-haml'
 " Plugin 'tpope/vim-endwise'
 " Plugin 'vim-scripts/vim-auto-save'
