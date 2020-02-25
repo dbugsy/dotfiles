@@ -28,3 +28,6 @@
 [submodule ".vim/pack/dbugsy/start/ack.vim"]
 	path = .vim/pack/dbugsy/start/ack.vim
 	url = https://github.com/mileszs/ack.vim
+[submodule ".vim/pack/dbugsy/start/vim-multiple-cursors"]
+	path = .vim/pack/dbugsy/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
