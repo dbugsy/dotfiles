@@ -14,8 +14,9 @@ filetype plugin on    " Enable filetype-specific plugins
 set omnifunc=syntaxcomplete#Complete
 
 " swapfiles directory
-:set directory=/tmp
-:set backupdir=$HOME/.vim/backups//
+:set directory=~/.vim/.swp//
+:set undodir=~/.vim/.undo//
+:set backupdir=~/.vim/.backup//
 
 " searching
 set hlsearch                    " highlight matches
