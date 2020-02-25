@@ -74,9 +74,7 @@ if executable('ag')
 endif
 
 " ctrl-p
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_root_markers = ['Gemfile']
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_show_hidden = 1
 
 " vim-test
 nmap <silent> <leader>s :TestNearest<CR>
