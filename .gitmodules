@@ -34,3 +34,6 @@
 [submodule ".vim/pack/dbugsy/start/ale"]
 	path = .vim/pack/dbugsy/start/ale
 	url = https://github.com/dense-analysis/ale
+[submodule ".vim/pack/dbugsy/start/csv.vim"]
+	path = .vim/pack/dbugsy/start/csv.vim
+	url = https://github.com/chrisbra/csv.vim
