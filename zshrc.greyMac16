@@ -8,6 +8,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
+plugins=(zsh-lux)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -41,3 +43,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Haskell
 [ -f "/Users/dany/.ghcup/env" ] && source "/Users/dany/.ghcup/env" # ghcup-env
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
