@@ -29,6 +29,8 @@ alias gc="git commit"
 alias gcm="git commit -m"
 alias gca="git commit --all"
 alias gcam="git commit -am"
+alias rr="bin/rails routes"
+alias rf="source ~/.zshrc"
 
 # initialize rbenv on startup
 eval "$(rbenv init -)"

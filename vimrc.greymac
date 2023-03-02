@@ -5,6 +5,8 @@ let mapleader=" "
 set backspace=indent,eol,start
 set relativenumber
 set clipboard=unnamed
+set autowrite
+set autoread
 
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
@@ -60,8 +62,30 @@ let g:ale_linters = {
 " enable ale integration
 let g:airline#extensions#ale#enabled = 1
 
-" vim-auto-save
-let g:auto_save = 1
+" vim-go
+map <C-l> :cnext<CR>
+map <C-h> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
+let g:go_list_type = "quickfix"
+
+" run :GoBuild or :GoTestCompile based on the go file
+function! s:build_go_files()
+  let l:file = expand('%')
+  if l:file =~# '^\f\+_test\.go$'
+    call go#test#Test(0, 1)
+  elseif l:file =~# '^\f\+\.go$'
+    call go#cmd#Build(0)
+  endif
+endfunction
+
+autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_auto_type_info = 1
+let g:go_auto_sameids = 1
 
 "Ag
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -72,6 +96,7 @@ if executable('ag')
   "     " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
+
 
 " ctrl-p
 let g:ctrlp_show_hidden = 1
